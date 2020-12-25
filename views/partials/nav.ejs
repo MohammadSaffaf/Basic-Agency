@@ -5,20 +5,21 @@
             <li><a href=<%=NavItem.url %> > <%=NavItem.name %> </a></li>
             <%})%>
     </ul>
-    <img class="hamburger" src="assets/img/menu.svg" alt="">
+    <img class="hamburger" id="hamburger" src="assets/img/menu.svg" alt="">
 </nav>
-<section class="hamburger-list">
+<section class="hamburger-list" id="overlay">
     <article class="internal">
         <div class="head-text">
             <h4>(6) Internal Works ©2020 c/o BASIC®</h4>
             <h4>A collection of internal project and initiatives under the BASIC® brand.</h4>
         </div>
-        <img src=" assets/img/close.svg" alt="">
+        <img src=" assets/img/close.svg" alt="" id="close">
     </article>
     <article class="internal-fiq">
         <div>
             <figure id="culture">
-                <img style="transition: all 1 linear;" src="assets/img/selected-work1.jpg" alt="" id="demo">
+                <img style="transition: all 1 linear;" src="assets/img/selected-work1.jpg" alt=""
+                    onmouseover="Img(this)" onmouseout="normalImg(this)">
 
 
                 <figcaption>
@@ -35,7 +36,7 @@
         </div>
         <div>
             <figure class="moves">
-                <img src="assets/img/selected-work2.jpg" alt="" id="demo2">
+                <img src="assets/img/selected-work2.jpg" alt="" onmouseover="Img(this)" onmouseout="normalImg(this)">
 
 
                 <figcaption>
@@ -53,7 +54,7 @@
         </div>
         <div>
             <figure id="manual">
-                <img src="assets/img/selected-work3.jpg" alt="" id="demo">
+                <img src="assets/img/selected-work3.jpg" alt="" onmouseover="Img(this)" onmouseout="normalImg(this)">
 
 
                 <figcaption>
@@ -71,7 +72,7 @@
         </div>
         <div>
             <figure class="manual1">
-                <img src="assets/img/selected-work4.jpg" alt="" id="demo">
+                <img src="assets/img/selected-work4.jpg" alt="" onmouseover="Img(this)" onmouseout="normalImg(this)">
 
 
                 <figcaption>
@@ -89,7 +90,7 @@
         </div>
         <div>
             <figure class="manual2">
-                <img src="assets/img/selected-work5.jpg" alt="" id="demo">
+                <img src="assets/img/selected-work5.jpg" alt="" onmouseover="Img(this)" onmouseout="normalImg(this)">
 
 
                 <figcaption>
@@ -108,18 +109,4 @@
     </article>
 
 </section>
-<script>
-    document.getElementById("demo").addEventListener("mouseover", mouseOver);
-    document.getElementById("demo").addEventListener("mouseout", mouseOut);
-
-    function mouseOver() {
-        document.getElementById("demo").style.height = "43vh";
-        document.getElementById("demo").style.transition = "all .5s";
-
-    }
-
-    function mouseOut() {
-        document.getElementById("demo").style.height = "50vh";
-    }
-
-</script>
+<script src="assets/js/main.js"></script>
