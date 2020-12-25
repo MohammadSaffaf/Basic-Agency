@@ -207,9 +207,9 @@ li {
   margin-bottom: 15%;
 }
 .branding-text a {
-  font-family: "scto-regular";
+  font-family: "scto-bold";
   border: 1px solid #252422;
-  padding: 2% 5%;
+  padding: 1% 6%;
   border-radius: 30px;
 }
 .branding-text a:hover {
@@ -221,5 +221,132 @@ li {
 }
 
 .branding-img {
+  width: 30%;
+}
+.featured {
+  color: #252422;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.featured h1 {
+  font-family: "scto-medium";
+  font-size: 3rem;
+  width: 30%;
+}
+.featured-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 5%;
+}
+.featured-section div {
+  width: 100%;
+}
+.featured-section img {
+  width: 40%;
+  margin-bottom: 2%;
+}
+.featured-section p {
+  width: 10%;
+}
+.featured-section h3 {
+  font-family: "scto-medium";
+  font-size: 23px;
+  margin-top: 10%;
+  width: 20%;
+}
+.featured-section h5 {
+  font-family: "scto-regular";
+  font-size: 20px;
+  margin-top: 4%;
+  width: 100%;
+
+  border-top: 2px solid #252422;
+  padding-top: 4%;
+}
+.patagonia,
+.airbnb {
+  margin-left: 15%;
+}
+.section-helpsBrand {
+  background-color: #252422;
+  color: #f9cdcd;
+  min-height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.article-helpsBrand {
+  padding-top: 10%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+.helpsBrand-text h3 {
+  font-family: "scto-bold";
+  font-size: 6rem;
+  width: 65%;
+}
+.helpsBrand-text p {
+  font-family: "scto-regular";
+  margin-top: 8%;
+  margin-bottom: 15%;
+}
+.helpsBrand-text span {
+  font-family: "scto-bold";
+}
+.helpsBrand-video {
+  width: 80%;
+}
+.section-helpsBrand video {
+  width: 100%;
+}
+.helpsBrand-text a {
+  font-family: "scto-bold";
+  border: 1px solid #f9cdcd;
+  padding: 1% 6%;
+  border-radius: 30px;
+}
+.article-featured-news h1 {
+  font-family: "scto-bold";
+  font-size: 3rem;
+}
+.adweek {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5%;
+  border-top: 2px solid #f9cdcd;
+  padding-top: 3%;
+}
+.adweek-news {
+  width: 80%;
+  display: flex;
+}
+.adweek-text h2 {
+  font-family: "scto-medium";
+  font-size: 3rem;
+  margin-left: 3%;
+  width: 80%;
+}
+.adweek-text p {
+  font-family: "scto-regular";
+  margin-top: 20%;
+  margin-left: 3%;
+  font-size: 20px;
+}
+.adweek-text span {
+  margin-left: 4%;
+}
+.adweek-news img {
+  width: 40%;
+}
+.adweek-img {
+  text-align: right;
+}
+.adweek-img img {
   width: 30%;
 }
