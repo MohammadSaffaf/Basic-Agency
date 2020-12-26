@@ -15,6 +15,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #f4f4f4;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -427,4 +430,99 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* work Style____________  */
+.work-header {
+  height: 90vh;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.work-header h1 {
+  font-size: 6.5rem;
+  font-family: "scto-bold";
+  width: 50%;
+}
+.work-header p {
+  font-family: "scto-regular";
+  font-size: 25px;
+
+  margin-top: 15%;
+  width: 30%;
+  margin-left: 70%;
+}
+.work-section {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #252422;
+  margin-bottom: 5%;
+}
+.work-article {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  border-top: 1px solid #252422;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.work-div01 p {
+  font-family: "scto-regular";
+  font-size: 22px;
+  width: 85%;
+}
+.work-div01 h1 {
+  font-family: "scto-medium";
+  font-size: 2rem;
+  width: 40%;
+  margin-top: 40%;
+  margin-bottom: 10%;
+}
+.work-div01 a {
+  display: inline-block;
+  font-family: "scto-bold";
+  border: 1px solid #252422;
+  padding: 1% 6%;
+  border-radius: 30px;
+  margin-top: 20%;
+}
+.work-div01 a:hover {
+  color: #fff;
+  background-color: #252422;
+}
+.work-div02 {
+  border-left: 1px solid #252422;
+  padding-left: 30px;
+  margin-right: 20px;
+}
+.work-videos video {
+  height: 60vh;
+}
+.work-div02 img {
+  height: 60vh;
+}
+.work-div02 h3 {
+  font-family: "scto-bold";
+  margin-top: 5%;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+.work-div02 p {
+  font-family: "scto-medium";
+  width: 50%;
+  font-size: 20px;
+}
+.work-div03 img {
+  height: 60vh;
+}
+.work-div03 h3 {
+  font-family: "scto-bold";
+  margin-top: 5%;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+.work-div03 p {
+  font-family: "scto-medium";
+  width: 53%;
+  font-size: 20px;
 }

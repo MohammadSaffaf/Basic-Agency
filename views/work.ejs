@@ -1,3 +1,115 @@
 <%- include('./partials/header') %>
+    <header class="work-header">
+        <h1>EASY TO UNDERSTAND. ●IMPOSSIBLE TO IGNORE.</h1>
+        <p>The work we create lives at the intersection of clarity and surprise and positions brands in culture through
+            shared values and ideals.</p>
+    </header>
 
+    <section class="work-section">
+
+        <article class="work-article">
+            <div class="work-div01">
+                <p>01/04</p>
+                <h1>BRANDED ECOMMERCE</h1>
+                <p>We go beyond best practices and build best-in-class D2C channels that drive commerce, shape culture,
+                    and define categories.</p>
+                <a href="#">Learn More
+                </a>
+            </div>
+            <div class="work-div02">
+                <div class=" work-videos">
+                    <video src="assets/img/Google-Store.mp4" autoplay muted loop></video>
+                </div>
+                <h3>Google Store</h3>
+                <p>
+                    AN ECOMMERCE EXPERIENCE HELPING GOOGLE BRING ITS HARDWARE TO PEOPLE ACROSS THE GLOB </p>
+            </div>
+            <div class="work-div03">
+                <img src='assets/img/Beats.jpg' alt=''>
+                <h3>
+                    Beats By Dre
+                </h3>
+                <p>
+                    ENGINEERING A DIGITAL DESTINATION THAT MOVES AT THE SPEED OF CULTURE
+                </p>
+            </div>
+        </article>
+        <% workJson.forEach(work=> { %>
+            <article class="work-article">
+                <div class="work-div01">
+                    <p>
+                        <%= work.Passage %>
+                    </p>
+                    <h1>
+                        <%= work.Title %>
+                    </h1>
+                    <p>
+                        <%= work.info %>
+                    </p>
+                    <a href="#">Learn More
+                    </a>
+                </div>
+                <div class="work-div02">
+                    <div class=" work-videos">
+                        <img src="<%= work.img1 %>" alt="">
+                    </div>
+                    <h3>
+                        <%= work.Dec1 %>
+                    </h3>
+                    <p>
+                        <%= work.feature1 %>
+                    </p>
+                </div>
+                <div class="work-div03">
+                    <img src='<%= work.img2 %>' alt=''>
+                    <h3>
+                        <%= work.Dec2 %>
+                    </h3>
+                    <p>
+                        <%= work.feature2 %>
+                    </p>
+                </div>
+            </article>
+            <%})%>
+
+
+
+
+
+                <!-- <% workJson.forEach(work=> { %>
+            <article>
+                <div class="work-div01">
+                    <p>
+                        <%= work.Passage %>
+                    </p>
+                    <h1>
+                        <%= work.Title %>
+                    </h1>
+                    <p>
+                        <%= work.info %>
+                    </p>
+                    <a href="#">Learn More
+                    </a>
+                </div>
+                <div>
+                    <%= work.img1 %>
+                        <h3>
+                            <%= work.Dec1 %>
+                        </h3>
+                        <p>
+                            <%= work.feature1 %>
+                        </p>
+                </div>
+                <div>
+                    <%= work.img2 %>
+                        <h3>
+                            <%= work.Dec2 %>
+                        </h3>
+                        <p>
+                            <%= work.feature2 %>
+                        </p>
+                </div>
+            </article>
+            <%})%> -->
+    </section>
     <%- include('./partials/footer') %>

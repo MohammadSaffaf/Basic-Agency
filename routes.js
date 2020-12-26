@@ -4,6 +4,7 @@ const router = express.Router()
 const nav = require('./nav.json')
 const featurd = require('./featurd.json')
 const ingegment = require('./ingegment.json')
+const workJson = require('./work.json')
 
 // console.log(nav);
 
@@ -23,7 +24,7 @@ router.get('/thinking', (req, res) => {
 res.render('thinking', { title:"Projekt Basic Agency/Thinking" , nav })
 })
 router.get('/work', (req, res) => {
-    res.render('work', { title:"Projekt Basic Agency/Work" , nav })
+    res.render('work', { title:"Projekt Basic Agency/Work" , nav,workJson })
     })
 
 
