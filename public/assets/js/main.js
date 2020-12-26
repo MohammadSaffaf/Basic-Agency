@@ -12,13 +12,44 @@ function normalImg(index) {
 
 function Front(team) {
     console.log("object");
-    team.style.zIndex = 0;
+    team.style.zIndex = 5;
+    team.style.position = "absolute";
+
     
 
 }
 
 function normalZindex(team) {
-    team.style.zIndex = 3;
+    team.style.zIndex = "3";
+    team.style.position = "absolute";
+
+}
+function Front2(team) {
+    console.log("object");
+    team.style.zIndex = 5;
+    team.style.position = "absolute";
+
+    
+
+}
+
+function normalZindex2(team) {
+    team.style.zIndex = "2";
+    team.style.position = "absolute";
+
+}
+function Front3(team) {
+    console.log("object");
+    team.style.zIndex = 5;
+    team.style.position = "absolute";
+
+    
+
+}
+
+function normalZindex3(team) {
+    team.style.zIndex = "1";
+    team.style.position = "absolute";
 
 }
 const burger = document.getElementById("hamburger")
