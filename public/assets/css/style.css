@@ -607,24 +607,13 @@ footer {
   left: 100vh;
   z-index: 1;
 }
-/* .about-fig figure:nth-of-type(1) :hover {
-  position: absolute;
-  top: 130vh;
-  left: 50vh;
-  z-index: inset;
+.about-section {
+  border-bottom: 1px solid #f9cdcd;
 }
-.about-fig figure:nth-of-type(2) :hover {
-  z-index: 5;
+.logo-pink {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 50%;
 }
-.about-fig figure:nth-of-type(3) :hover {
-  z-index: 5;
-} */
-/* .about-fig figure:nth-of-type(2) {
-  z-index: 4;
-}
-.about-fig figure:nth-of-type(3) {
-  z-index: 4;
-}
-.about-fig figure:nth-of-type(4) {
-  z-index: 4;
-} */
