@@ -3,9 +3,10 @@ const app = express();
 const PORT = process.env.PORT || 5555
 const routes = require('./routes')
 const nav = require('./nav.json')
-const featurd = require('./featurd.json')
-const ingegment = require('./ingegment.json')
-const workJson = require('./work.json')
+// const featurd = require('./featurd.json')
+// const ingegment = require('./ingegment.json')
+// const workJson = require('./work.json')
+
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
