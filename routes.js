@@ -3,11 +3,12 @@ const router = express.Router()
 
 const nav = require('./nav.json')
 const featurd = require('./featurd.json')
+const ingegment = require('./ingegment.json')
 
 // console.log(nav);
 
 router.get('/', (req, res) => {
-res.render('index', { title:"Projekt Basic Agency/Home" ,nav , featurd })
+res.render('index', { title:"Projekt Basic Agency/Home" ,nav , featurd ,ingegment})
 })
 router.get('/about', (req, res) => {
 res.render('about', {  title:"Projekt Basic Agency/About" ,nav })
