@@ -810,3 +810,56 @@ footer {
 .article-thinking div:nth-of-type(2) p {
   margin-top: 62%;
 }
+
+/* contact Style_____________ */
+.contact-img {
+  background: url(../img/Contact-Header.jpg) left center no-repeat;
+  height: 90vh;
+  margin-right: 2%;
+  margin-top: 5%;
+  width: 50%;
+}
+.contacts-header {
+  width: 90%;
+  display: flex;
+
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.contact-info {
+  margin-top: 15%;
+}
+.contact-info h1 {
+  font-family: "scto-bold";
+  font-size: 8rem;
+}
+.easy-text {
+  font-family: "scto-regular";
+  width: 40%;
+}
+.contact-mail {
+  display: grid;
+  grid-template-columns: 40% 85%;
+  margin-top: 15%;
+}
+.contact-mail h2 {
+  font-family: "scto-bold";
+  font-size: 3rem;
+}
+.contact-mail div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contact-mail h3 {
+  font-family: "scto-bold";
+  font-size: 25px;
+  margin-bottom: 10%;
+}
+.contact-mail p {
+  font-family: "scto-regular";
+  margin-bottom: 10%;
+  font-size: 20px;
+  text-decoration: underline;
+  opacity: 0.5;
+}
