@@ -9,6 +9,7 @@ const agency = require('./agency.json')
 const capa = require('./capabilities.json')
 const newsSeite = require('./news.json')
 const thinking = require('./thinking.json')
+const office = require('./office.json')
 
 // console.log(nav);
 
@@ -19,7 +20,7 @@ router.get('/about', (req, res) => {
 res.render('about', {  title:"Projekt Basic Agency/About" ,nav ,agency , capa})
 })
 router.get('/contact', (req, res) => {
-res.render('contact', {  title:"Projekt Basic Agency/Contact" ,nav })
+res.render('contact', {  title:"Projekt Basic Agency/Contact" ,nav,office })
 })
 router.get('/news', (req, res) => {
 res.render('news', {  title:"Projekt Basic Agency/News" ,nav , newsSeite})

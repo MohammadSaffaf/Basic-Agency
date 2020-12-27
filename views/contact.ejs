@@ -25,4 +25,74 @@
             </div>
         </div>
     </header>
+    <section class="contact-office">
+        <article class="contact-SEC">
+            <p>SEC.</p>
+            <h1>OFFICES</h1>
+        </article>
+        <article class="article-office">
+            <div class="div-office">
+                <p>/A</p>
+                <h3>●</h3>
+
+            </div>
+
+            <div class="sandiego">
+                <% office.forEach(officeItem=> { %>
+                    <div class="bayarfa">
+                        <figure class="photo-office">
+                            <img src="<%= officeItem.img %> " alt="">
+                            <figcaption>
+                                <h4>
+                                    <%= officeItem.number %>
+                                </h4>
+                                <h4>
+                                    <%= officeItem.secNumber %>
+                                </h4>
+
+                            </figcaption>
+
+                        </figure>
+                        <h3>
+                            <%= officeItem.place %>
+                        </h3>
+                    </div>
+
+
+                    <%})%>
+            </div>
+        </article>
+    </section>
+    <section class="contact-office">
+        <article class="contact-SEC">
+            <p>SEC.</p>
+            <h1>FOLLOW</h1>
+        </article>
+        <article class="article-office">
+            <div class="div-office">
+                <p>/B</p>
+                <h3>●</h3>
+
+            </div>
+            <div class="contact-social">
+                <div class="div-social">
+                    <h2>Social</h2>
+                    <ul>
+
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="contact-input">
+                    <h5>STAY IN THE KNOW</h5>
+                    <p>Email Address</p>
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+
+
+        </article>
+    </section>
     <%- include('./partials/footer') %>

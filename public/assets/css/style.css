@@ -134,6 +134,11 @@ li {
   padding: 3% 8%;
   border-radius: 30px;
 }
+.internal-fiq a:hover {
+  color: #252422;
+  background-color: #f9cdcd;
+  border: 2px solid #f9cdcd;
+}
 .internal-fiq img {
   height: 50vh;
   width: 500px;
@@ -154,7 +159,7 @@ li {
   background: #252400;
 }
 .internal-fiq::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: #252422;
   border-radius: 5px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
@@ -565,6 +570,7 @@ footer {
   font-size: 6.5rem;
   font-family: "scto-bold";
   width: 80%;
+  margin-bottom: 4%;
 }
 .into p {
   font-family: "scto-regular";
@@ -863,3 +869,110 @@ footer {
   text-decoration: underline;
   opacity: 0.5;
 }
+.contact-office {
+  margin-right: 5%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border-top: 1px solid #252422;
+  color: #252422;
+  margin-bottom: 8%;
+}
+.div-office {
+  display: flex;
+  justify-content: space-between;
+  font-family: "scto-regular";
+  font-size: 20px;
+  margin-bottom: 9%;
+
+  margin-top: 1%;
+}
+.contact-SEC p {
+  font-family: "scto-regular";
+  font-size: 20px;
+  margin-bottom: 20%;
+  margin-top: 2%;
+}
+.contact-SEC h1 {
+  font-family: "scto-bold";
+  font-size: 3rem;
+  width: 20%;
+}
+.sandiego {
+  border-left: 1px solid #252422;
+  padding-left: 2%;
+}
+.bayarfa {
+  border-bottom: 1px solid #252422;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 3%;
+}
+.photo-office figcaption {
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+  margin-bottom: 4%;
+}
+.photo-office img {
+  margin-bottom: 3%;
+}
+.photo-office h4 {
+  font-family: "scto-medium";
+}
+.sandiego h3 {
+  font-family: "scto-bold";
+  font-size: 25px;
+  margin-left: 6%;
+}
+.contact-social {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 3%;
+}
+.div-social {
+  line-height: 40px;
+  text-decoration: underline;
+}
+.div-social h2 {
+  font-family: "scto-medium";
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+.div-social ul {
+  font-family: "scto-regular";
+  font-size: 20px;
+  opacity: 0.7;
+}
+.contact-input h5 {
+  font-family: "scto-regular";
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+.contact-input p {
+  font-family: "scto-regular";
+  font-size: 25px;
+  margin-bottom: 2%;
+  opacity: 0.7;
+}
+.contact-input input {
+  border: none;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #252422;
+  width: 96%;
+}
+/* :) :) :) :) :) :) :) :) :) :):) 
+:) :) :) :) :) :) :) :) :) :):) :)
+:) :) :) :) :) :) :) :) :) :):) :)
+:) :) :) :) :)  _^_ :) :) :) :) :) 
+:) :) :) :)   _^_^_^_  :) :) :) :) 
+:) :) :)    _^_^_^_^_^_   :) :) :) 
+:) :) :)  _^_^_^_^_^_^_^_ :) :) :)
+:) :)   _^_^_^_^_^_^_^_^_^_  :) :)
+:) :) :) :)   _^_^_^_  :) :) :) :)
+:) :) :) :)   _^_^_^_  :) :) :) :)
+:) :) :) :)   _^_^_^_  :) :) :) :)
+:) :) :) :) :) :) :) :) :) :):) :)
+:) :) :) :) :) :) :) :) :) :):) :)
+            27/12/2020 
+          HAPPY NEW YEAR */
