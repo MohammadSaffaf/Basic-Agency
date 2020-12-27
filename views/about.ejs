@@ -13,6 +13,33 @@
             background-color: #252422;
             color: #f9cdcd;
         }
+
+        .navItem li:hover {
+            border-bottom: 1px solid #f9cdcd
+        }
+
+        .section-collaborate {
+            background-color: #f4f4f4;
+            color: #252422;
+        }
+
+        .collaborate img {
+            display: none;
+        }
+
+        .collaborate div {
+            display: block;
+        }
+
+        .div-input input {
+            border-color: #252422;
+            background-color: inherit;
+        }
+
+        footer {
+            background-color: rgba(207, 207, 207, 0.5);
+            color: #252422;
+        }
     </style>
 </head>
 
@@ -185,22 +212,135 @@
             <img src="assets/img/logo_pink.svg" alt="logo">
         </div>
         <section class="section-agency">
-            <article>
+            <article class="agency">
                 <p>SEC.</p>
                 <h1>AGENCY SNAPSHOT</h1>
             </article>
-            <article>
-                <div>
-                    <p></p>
-                    <h3></h3>
+            <article class="categories">
+                <div class="category-text">
+                    <p>/B</p>
+                    <h3>●</h3>
 
+                </div>
+
+                <div class="agency-forEach">
+                    <% agency.forEach(agencyItem=> { %>
+                        <div>
+                            <h2>
+                                <%= agencyItem.categories %>
+                            </h2>
+                            <h1>
+                                <%= agencyItem.number %>
+                            </h1>
+                            <p>
+                                <%= agencyItem.disc %>
+                            </p>
+
+                        </div>
+                        <%})%>
                 </div>
             </article>
         </section>
+        <section class="section-agency">
+            <article class="agency">
+                <p>SEC.</p>
+                <h1>CAPABILITIES</h1>
+            </article>
+            <article class="categories">
+                <div class="category-text">
+                    <p>/B</p>
+                    <h3>●</h3>
 
+                </div>
+
+                <div class="agency-forEach">
+                    <% capa.forEach(capaItem=> { %>
+                        <div class="capaItem-list">
+                            <h2>
+                                <%= capaItem.head %>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <%= capaItem.list1 %>
+                                </li>
+                                <li>
+                                    <%= capaItem.list2 %>
+                                </li>
+                                <li>
+                                    <%= capaItem.list3 %>
+                                </li>
+                                <li>
+                                    <%= capaItem.list4 %>
+                                </li>
+                                <li>
+                                    <%= capaItem.list5 %>
+                                </li>
+                                <li>
+                                    <%= capaItem.list6 %>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <%})%>
+                </div>
+            </article>
+        </section>
+        <section class="section-awards">
+            <article class="agency">
+                <p>SEC.</p>
+                <h1>AWARDS</h1>
+            </article>
+            <article class="categories">
+                <div class="category-text">
+                    <p>/C</p>
+                    <h3>●</h3>
+
+                </div>
+
+                <div class="agency-forEach">
+
+                    <div>
+                        <h4>While results are what matter most, we believe awards bring value and recognition to
+                            organizations as well as individuals.
+                        </h4>
+                        <a href="#">full awardslist</a>
+
+                    </div>
+
+                </div>
+
+
+            </article>
+        </section>
+        <section class="Gallery-aword">
+            <div>
+                <h1 id="head1">WEEBY AWARDS <span>/40</span></h1>
+                <img src="assets/img/hover-1.jpg" alt="" id="img1">
+            </div>
+            <div>
+                <h1 id="head2">ADWEEK <span>/01</span></h1>
+                <img src="assets/img/hover-2.jpg" alt="" id="img2">
+            </div>
+            <div>
+                <h1 id="head3">AWWWORDS<span>/22</span></h1>
+                <img src="assets/img/hover-3.jpg" alt="" id="img3">
+            </div>
+            <div>
+                <h1 id="head4">D&AD <span>/01</span></h1>
+                <img src="assets/img/hover-4.jpg" alt="" id="img4">
+            </div>
+            <div>
+                <h1 id="head5">ONE SHOW <span>/03</span></h1>
+                <img src="assets/img/hover-5.jpg" alt="" id="img5">
+            </div>
+            <div>
+                <h1 id="head6">THE FWA <span>/07</span></h1>
+                <img src="assets/img/hover-6.jpg" alt="" id="img6">
+            </div>
+
+        </section>
     </section>
     <script src="assets/js/main.js"></script>
 
-</body>
-
-</html>
+    <%- include('./partials/footer') %>

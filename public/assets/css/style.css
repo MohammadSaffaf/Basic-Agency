@@ -48,6 +48,10 @@ li {
   display: flex;
   width: 40%;
   justify-content: space-between;
+  padding-bottom: 2%;
+}
+.navItem li:hover {
+  border-bottom: 1px solid #252422;
 }
 .hamburger-list {
   position: fixed;
@@ -363,6 +367,12 @@ li {
   width: 30%;
 }
 /* footer Style____________ */
+.collaborate div {
+  background: url(../img/footer-logo-bg-white.svg) center/cover no-repeat;
+  height: 4vh;
+  width: 5.3%;
+  display: none;
+}
 .section-collaborate {
   color: #f4f4f4;
   background-color: #252422;
@@ -616,4 +626,114 @@ footer {
   margin-left: 5%;
   margin-right: 5%;
   width: 50%;
+}
+.section-agency {
+  border-top: 1px solid #f9cdcd;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.agency p {
+  font-family: "scto-regular";
+  font-size: 20px;
+  margin-bottom: 20%;
+}
+.agency h1 {
+  font-family: "scto-bold";
+  font-size: 3rem;
+  width: 20%;
+}
+.category-text {
+  display: flex;
+  justify-content: space-between;
+  font-family: "scto-regular";
+  font-size: 20px;
+  margin-bottom: 9%;
+}
+.agency-forEach {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.agency-forEach h2 {
+  font-family: "scto-bold";
+  font-size: 30px;
+  margin-bottom: 4%;
+}
+.agency-forEach h1 {
+  font-family: "scto-bold";
+  font-size: 5.5rem;
+  margin-bottom: 4%;
+}
+.agency-forEach p {
+  font-family: "scto-regular";
+  margin-bottom: 13%;
+  font-size: 20px;
+  width: 55%;
+}
+.capaItem-list ul {
+  font-family: "scto-regular";
+
+  margin-bottom: 10%;
+}
+.capaItem-list li {
+  margin-bottom: 3%;
+}
+.section-awards {
+  border-top: 1px solid #f9cdcd;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.section-awards h4 {
+  font-family: "scto-medium";
+  font-size: 40px;
+  margin-bottom: 10%;
+  width: 55vh;
+}
+.agency-forEach a {
+  font-family: "scto-medium";
+  border: 1px solid #f9cdcd;
+  padding: 1% 6%;
+  border-radius: 30px;
+}
+.agency-forEach a:hover {
+  color: #252422;
+  background-color: #f9cdcd;
+  border: 1px solid #f9cdcd;
+  padding: 1% 6%;
+  border-radius: 30px;
+}
+.Gallery-aword {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  height: 100vh;
+}
+.Gallery-aword div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.Gallery-aword h1 {
+  font-family: "scto-bold";
+  font-size: 5rem;
+}
+.Gallery-aword h1 span {
+  font-size: 20px;
+  position: absolute;
+  font-family: "scto-regular";
+  top: 15px;
+  padding-left: 10px;
+}
+.Gallery-aword img {
+  width: 40%;
+  position: absolute;
+  display: none;
+  left: 65%;
 }
