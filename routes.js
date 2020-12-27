@@ -7,6 +7,8 @@ const ingegment = require('./ingegment.json')
 const workJson = require('./work.json')
 const agency = require('./agency.json')
 const capa = require('./capabilities.json')
+const newsSeite = require('./news.json')
+const thinking = require('./thinking.json')
 
 // console.log(nav);
 
@@ -20,10 +22,10 @@ router.get('/contact', (req, res) => {
 res.render('contact', {  title:"Projekt Basic Agency/Contact" ,nav })
 })
 router.get('/news', (req, res) => {
-res.render('news', {  title:"Projekt Basic Agency/News" ,nav})
+res.render('news', {  title:"Projekt Basic Agency/News" ,nav , newsSeite})
 })
 router.get('/thinking', (req, res) => {
-res.render('thinking', { title:"Projekt Basic Agency/Thinking" , nav })
+res.render('thinking', { title:"Projekt Basic Agency/Thinking" , nav,thinking })
 })
 router.get('/work', (req, res) => {
     res.render('work', { title:"Projekt Basic Agency/Work" , nav,workJson })

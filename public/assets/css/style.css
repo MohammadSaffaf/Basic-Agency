@@ -723,6 +723,10 @@ footer {
 .Gallery-aword h1 {
   font-family: "scto-bold";
   font-size: 5rem;
+  opacity: 0.5;
+}
+.Gallery-aword h1:hover {
+  opacity: 1;
 }
 .Gallery-aword h1 span {
   font-size: 20px;
@@ -736,4 +740,73 @@ footer {
   position: absolute;
   display: none;
   left: 65%;
+}
+/* News Style____________ */
+
+.news-header div {
+  height: 50vh;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "scto-bold";
+  font-size: 5rem;
+  color: #252422;
+}
+.article-News {
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+.article-News .adweek {
+  border-color: #252422;
+}
+/* Thinking Style____________ */
+.thinking-header div {
+  height: 50vh;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "scto-bold";
+  font-size: 5rem;
+  color: #f9cdcd;
+}
+.thinking-header-text {
+  display: flex;
+  width: 70%;
+  margin-left: 5%;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+.thinking-header-text h2 {
+  font-family: "scto-bold";
+  font-size: 40px;
+}
+.thinking-header-text p {
+  font-family: "scto-regular";
+  font-size: 22px;
+  margin-top: 5%;
+  width: 75%;
+  line-height: 40px;
+}
+.article-thinking {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.article-thinking p {
+  margin-top: 45%;
+}
+.article-thinking h2 {
+  width: 95%;
+}
+.article-thinking div:nth-of-type(2) h2 {
+  width: 100%;
+}
+.article-thinking div:nth-of-type(2) p {
+  margin-top: 62%;
 }

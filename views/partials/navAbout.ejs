@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>
+        <%=title %>
+    </title>
+    <style>
+        .about-page {
+            background-color: #252422;
+            color: #f9cdcd;
+        }
+
+        .navItem li:hover {
+            border-bottom: 1px solid #f9cdcd
+        }
+
+        .section-collaborate {
+            background-color: #f4f4f4;
+            color: #252422;
+        }
+
+        .collaborate img {
+            display: none;
+        }
+
+        .collaborate div {
+            display: block;
+        }
+
+        .div-input input {
+            border-color: #252422;
+            background-color: inherit;
+        }
+
+        footer {
+            background-color: rgba(207, 207, 207, 0.5);
+            color: #252422;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="about-page">
+        <nav class="navbar">
+            <a class="nav-logo" href="/"><img src="assets/img/logo_pink.svg" alt="logo"></a>
+            <ul class="navItem">
+                <% nav.forEach(NavItem=> { %>
+                    <li><a href=<%=NavItem.url %> > <%=NavItem.name %> </a></li>
+                    <%})%>
+            </ul>
+            <img class="hamburger" id="hamburger" src="assets/img/menu_pink.svg" alt="">
+        </nav>
+        <section class="hamburger-list" id="overlay">
+            <article class="internal">
+                <div class="head-text">
+                    <h4>(6) Internal Works ©2020 c/o BASIC®</h4>
+                    <h4>A collection of internal project and initiatives under the BASIC® brand.</h4>
+                </div>
+                <img src=" assets/img/close.svg" alt="" id="close">
+            </article>
+            <article class="internal-fiq">
+                <div>
+                    <figure id="culture">
+                        <img style="transition: all 1 linear;" src="assets/img/selected-work1.jpg" alt=""
+                            onmouseover="Img(this)" onmouseout="normalImg(this)">
+
+
+                        <figcaption>
+                            <h2>Culture Manual® ©2018</h2>
+                            <h3>Agency Culture & Onboarding</h3>
+                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
+                                the
+                                Culture Manual – an online guide for new hires that differentiates the employee
+                                onboarding
+                                process and builds alignment for our collective future.</p>
+                            <a href="#">VISIT THE SITE</a>
+
+                        </figcaption>
+                    </figure>
+                    <p>01</p>
+                </div>
+                <div>
+                    <figure class="moves">
+                        <img src="assets/img/selected-work2.jpg" alt="" onmouseover="Img(this)"
+                            onmouseout="normalImg(this)">
+
+
+                        <figcaption>
+                            <h2>Moves® ©2019</h2>
+                            <h3>Our New HQ</h3>
+                            <p class="hidden">When we moved into our new HQ, we put together a site experience providing
+                                an
+                                in-depth look into the two-year process imagining, designing, and developing our new
+                                office
+                                we
+                                call home.</p>
+                            <a href="#">VISIT THE SITE</a>
+
+
+                        </figcaption>
+                    </figure>
+                    <p>02</p>
+                </div>
+                <div>
+                    <figure id="manual">
+                        <img src="assets/img/selected-work3.jpg" alt="" onmouseover="Img(this)"
+                            onmouseout="normalImg(this)">
+
+
+                        <figcaption>
+                            <h2>Culture Manual® ©2018</h2>
+                            <h3>Agency Culture & Onboarding</h3>
+                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
+                                the
+                                Culture Manual – an online guide for new hires that differentiates the employee
+                                onboarding
+                                process and builds alignment for our collective future.</p>
+                            <a href="#">VISIT THE SITE</a>
+
+
+                        </figcaption>
+                    </figure>
+                    <p>03</p>
+                </div>
+                <div>
+                    <figure class="manual1">
+                        <img src="assets/img/selected-work4.jpg" alt="" onmouseover="Img(this)"
+                            onmouseout="normalImg(this)">
+
+
+                        <figcaption>
+                            <h2>Culture Manual® ©2018</h2>
+                            <h3>Agency Culture & Onboarding</h3>
+                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
+                                the
+                                Culture Manual – an online guide for new hires that differentiates the employee
+                                onboarding
+                                process and builds alignment for our collective future.</p>
+                            <a href="#">VISIT THE SITE</a>
+
+
+                        </figcaption>
+                    </figure>
+                    <p>04</p>
+                </div>
+                <div>
+                    <figure class="manual2">
+                        <img src="assets/img/selected-work5.jpg" alt="" onmouseover="Img(this)"
+                            onmouseout="normalImg(this)">
+
+
+                        <figcaption>
+                            <h2>Culture Manual® ©2018</h2>
+                            <h3>Agency Culture & Onboarding</h3>
+                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
+                                the
+                                Culture Manual – an online guide for new hires that differentiates the employee
+                                onboarding
+                                process and builds alignment for our collective future.</p>
+                            <a href="#">VISIT THE SITE</a>
+
+
+                        </figcaption>
+                    </figure>
+                    <p>05</p>
+                </div>
+            </article>
+
+        </section>

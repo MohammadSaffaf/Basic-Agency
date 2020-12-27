@@ -1,3 +1,35 @@
 <%- include('./partials/header') %>
+    <header class="news-header">
+        <div>
+            <h1>NEWS</h1>
+            <h1>●</h1>
+        </div>
+    </header>
+    <article class="article-featured-news article-News">
+
+        <% newsSeite.forEach(news=> {%>
+            <div class="adweek">
+
+
+                <div class="adweek-news">
+                    <img src="<%=news.img %> " alt="">
+                    <div class="adweek-text">
+                        <h2>
+                            <%=news.disc %>
+                        </h2>
+                        <p>
+                            <%=news.source %><span>
+                                    <%=news.date %>
+                                </span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="adweek-img">
+                    <a href=""><img src="assets/img/arrow-black.svg" alt=""></a>
+                </div>
+            </div>
+            <%}) %>
+    </article>
 
     <%- include('./partials/footer') %>

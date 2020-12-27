@@ -1,346 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>
-        <%=title %>
-    </title>
-    <style>
-        .about-page {
-            background-color: #252422;
-            color: #f9cdcd;
-        }
-
-        .navItem li:hover {
-            border-bottom: 1px solid #f9cdcd
-        }
-
-        .section-collaborate {
-            background-color: #f4f4f4;
-            color: #252422;
-        }
-
-        .collaborate img {
-            display: none;
-        }
-
-        .collaborate div {
-            display: block;
-        }
-
-        .div-input input {
-            border-color: #252422;
-            background-color: inherit;
-        }
-
-        footer {
-            background-color: rgba(207, 207, 207, 0.5);
-            color: #252422;
-        }
-    </style>
-</head>
-
-
-<body>
-    <section class="about-page">
-        <nav class="navbar">
-            <a class="nav-logo" href="/"><img src="assets/img/logo_pink.svg" alt="logo"></a>
-            <ul class="navItem">
-                <% nav.forEach(NavItem=> { %>
-                    <li><a href=<%=NavItem.url %> > <%=NavItem.name %> </a></li>
-                    <%})%>
-            </ul>
-            <img class="hamburger" id="hamburger" src="assets/img/menu_pink.svg" alt="">
-        </nav>
-        <section class="hamburger-list" id="overlay">
-            <article class="internal">
-                <div class="head-text">
-                    <h4>(6) Internal Works ©2020 c/o BASIC®</h4>
-                    <h4>A collection of internal project and initiatives under the BASIC® brand.</h4>
-                </div>
-                <img src=" assets/img/close.svg" alt="" id="close">
-            </article>
-            <article class="internal-fiq">
-                <div>
-                    <figure id="culture">
-                        <img style="transition: all 1 linear;" src="assets/img/selected-work1.jpg" alt=""
-                            onmouseover="Img(this)" onmouseout="normalImg(this)">
-
-
-                        <figcaption>
-                            <h2>Culture Manual® ©2018</h2>
-                            <h3>Agency Culture & Onboarding</h3>
-                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
-                                the
-                                Culture Manual – an online guide for new hires that differentiates the employee
-                                onboarding
-                                process and builds alignment for our collective future.</p>
-                            <a href="#">VISIT THE SITE</a>
-
-                        </figcaption>
-                    </figure>
-                    <p>01</p>
-                </div>
-                <div>
-                    <figure class="moves">
-                        <img src="assets/img/selected-work2.jpg" alt="" onmouseover="Img(this)"
-                            onmouseout="normalImg(this)">
-
-
-                        <figcaption>
-                            <h2>Moves® ©2019</h2>
-                            <h3>Our New HQ</h3>
-                            <p class="hidden">When we moved into our new HQ, we put together a site experience providing
-                                an
-                                in-depth look into the two-year process imagining, designing, and developing our new
-                                office
-                                we
-                                call home.</p>
-                            <a href="#">VISIT THE SITE</a>
-
-
-                        </figcaption>
-                    </figure>
-                    <p>02</p>
-                </div>
-                <div>
-                    <figure id="manual">
-                        <img src="assets/img/selected-work3.jpg" alt="" onmouseover="Img(this)"
-                            onmouseout="normalImg(this)">
-
-
-                        <figcaption>
-                            <h2>Culture Manual® ©2018</h2>
-                            <h3>Agency Culture & Onboarding</h3>
-                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
-                                the
-                                Culture Manual – an online guide for new hires that differentiates the employee
-                                onboarding
-                                process and builds alignment for our collective future.</p>
-                            <a href="#">VISIT THE SITE</a>
-
-
-                        </figcaption>
-                    </figure>
-                    <p>03</p>
-                </div>
-                <div>
-                    <figure class="manual1">
-                        <img src="assets/img/selected-work4.jpg" alt="" onmouseover="Img(this)"
-                            onmouseout="normalImg(this)">
-
-
-                        <figcaption>
-                            <h2>Culture Manual® ©2018</h2>
-                            <h3>Agency Culture & Onboarding</h3>
-                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
-                                the
-                                Culture Manual – an online guide for new hires that differentiates the employee
-                                onboarding
-                                process and builds alignment for our collective future.</p>
-                            <a href="#">VISIT THE SITE</a>
-
-
-                        </figcaption>
-                    </figure>
-                    <p>04</p>
-                </div>
-                <div>
-                    <figure class="manual2">
-                        <img src="assets/img/selected-work5.jpg" alt="" onmouseover="Img(this)"
-                            onmouseout="normalImg(this)">
-
-
-                        <figcaption>
-                            <h2>Culture Manual® ©2018</h2>
-                            <h3>Agency Culture & Onboarding</h3>
-                            <p class="hidden">To help strengthen our culture and attract world class talent, we created
-                                the
-                                Culture Manual – an online guide for new hires that differentiates the employee
-                                onboarding
-                                process and builds alignment for our collective future.</p>
-                            <a href="#">VISIT THE SITE</a>
-
-
-                        </figcaption>
-                    </figure>
-                    <p>05</p>
-                </div>
-            </article>
-
-        </section>
-        <header class="about-header">
-            <div class="turn">
-                <h1>WE TURN CULTURAL VALUE</h1>
-            </div>
-            <div class="into">
-                <h1>● INTO COMPANY VALUE
-                </h1>
-                <p><span>BASIC®</span> is an independent branding & experience design company working at the
-                    intersection of culture,
-                    design, and technology. We value our craft, have a deep passion for progression, and exist to solve
-                    challenges for brands we believe in. Since the beginning, our mission has been to do great work and
-                    to have a great time doing it. We believe our mission has guided us well.</p>
-            </div>
-        </header>
-        <section class="about-section">
-            <p>EASY TO UNDERSTAND. IMPOSSIBLE TO IGNORE.™ BASIC®, INC 10 - 20©
-            </p>
-            <article class="about-fig">
-                <figure onmouseover="Front(this)" onmouseout="normalZindex(this)">
-                    <img src="assets/img/About-Gallery_3.jpg" alt="agency-photo">
-                    <figcaption>(01)</figcaption>
-                </figure>
-                <figure onmouseover="Front1(this)" onmouseout="normalZindex1(this)">
-                    <img src="assets/img/About-Gallery_2.jpg" alt="agency-photo">
-                    <figcaption>(02)</figcaption>
-                </figure>
-                <figure onmouseover="Front2(this)" onmouseout="normalZindex2(this)">
-                    <img src="assets/img/About-Gallery_4.jpg" alt="agency-photo">
-                    <figcaption>(03)</figcaption>
-                </figure>
-                <figure onmouseover="Front3(this)" onmouseout="normalZindex3(this)">
-                    <img src="assets/img/About-Gallery_1.jpg" alt="agency-photo">
-                    <figcaption>(04)</figcaption>
-                </figure>
-            </article>
-        </section>
-        <div class="logo-pink">
-            <img src="assets/img/logo_pink.svg" alt="logo">
+<%- include('./partials/headerAbout') %>
+    <header class="about-header">
+        <div class="turn">
+            <h1>WE TURN CULTURAL VALUE</h1>
         </div>
-        <section class="section-agency">
-            <article class="agency">
-                <p>SEC.</p>
-                <h1>AGENCY SNAPSHOT</h1>
-            </article>
-            <article class="categories">
-                <div class="category-text">
-                    <p>/B</p>
-                    <h3>●</h3>
+        <div class="into">
+            <h1>● INTO COMPANY VALUE
+            </h1>
+            <p><span>BASIC®</span> is an independent branding & experience design company working at the
+                intersection of culture,
+                design, and technology. We value our craft, have a deep passion for progression, and exist to solve
+                challenges for brands we believe in. Since the beginning, our mission has been to do great work and
+                to have a great time doing it. We believe our mission has guided us well.</p>
+        </div>
+    </header>
+    <section class="about-section">
+        <p>EASY TO UNDERSTAND. IMPOSSIBLE TO IGNORE.™ BASIC®, INC 10 - 20©
+        </p>
+        <article class="about-fig">
+            <figure onmouseover="Front(this)" onmouseout="normalZindex(this)">
+                <img src="assets/img/About-Gallery_3.jpg" alt="agency-photo">
+                <figcaption>(01)</figcaption>
+            </figure>
+            <figure onmouseover="Front1(this)" onmouseout="normalZindex1(this)">
+                <img src="assets/img/About-Gallery_2.jpg" alt="agency-photo">
+                <figcaption>(02)</figcaption>
+            </figure>
+            <figure onmouseover="Front2(this)" onmouseout="normalZindex2(this)">
+                <img src="assets/img/About-Gallery_4.jpg" alt="agency-photo">
+                <figcaption>(03)</figcaption>
+            </figure>
+            <figure onmouseover="Front3(this)" onmouseout="normalZindex3(this)">
+                <img src="assets/img/About-Gallery_1.jpg" alt="agency-photo">
+                <figcaption>(04)</figcaption>
+            </figure>
+        </article>
+    </section>
+    <div class="logo-pink">
+        <img src="assets/img/logo_pink.svg" alt="logo">
+    </div>
+    <section class="section-agency">
+        <article class="agency">
+            <p>SEC.</p>
+            <h1>AGENCY SNAPSHOT</h1>
+        </article>
+        <article class="categories">
+            <div class="category-text">
+                <p>/B</p>
+                <h3>●</h3>
 
-                </div>
+            </div>
 
-                <div class="agency-forEach">
-                    <% agency.forEach(agencyItem=> { %>
-                        <div>
-                            <h2>
-                                <%= agencyItem.categories %>
-                            </h2>
-                            <h1>
-                                <%= agencyItem.number %>
-                            </h1>
-                            <p>
-                                <%= agencyItem.disc %>
-                            </p>
-
-                        </div>
-                        <%})%>
-                </div>
-            </article>
-        </section>
-        <section class="section-agency">
-            <article class="agency">
-                <p>SEC.</p>
-                <h1>CAPABILITIES</h1>
-            </article>
-            <article class="categories">
-                <div class="category-text">
-                    <p>/B</p>
-                    <h3>●</h3>
-
-                </div>
-
-                <div class="agency-forEach">
-                    <% capa.forEach(capaItem=> { %>
-                        <div class="capaItem-list">
-                            <h2>
-                                <%= capaItem.head %>
-                            </h2>
-                            <ul>
-                                <li>
-                                    <%= capaItem.list1 %>
-                                </li>
-                                <li>
-                                    <%= capaItem.list2 %>
-                                </li>
-                                <li>
-                                    <%= capaItem.list3 %>
-                                </li>
-                                <li>
-                                    <%= capaItem.list4 %>
-                                </li>
-                                <li>
-                                    <%= capaItem.list5 %>
-                                </li>
-                                <li>
-                                    <%= capaItem.list6 %>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        <%})%>
-                </div>
-            </article>
-        </section>
-        <section class="section-awards">
-            <article class="agency">
-                <p>SEC.</p>
-                <h1>AWARDS</h1>
-            </article>
-            <article class="categories">
-                <div class="category-text">
-                    <p>/C</p>
-                    <h3>●</h3>
-
-                </div>
-
-                <div class="agency-forEach">
-
+            <div class="agency-forEach">
+                <% agency.forEach(agencyItem=> { %>
                     <div>
-                        <h4>While results are what matter most, we believe awards bring value and recognition to
-                            organizations as well as individuals.
-                        </h4>
-                        <a href="#">full awardslist</a>
+                        <h2>
+                            <%= agencyItem.categories %>
+                        </h2>
+                        <h1>
+                            <%= agencyItem.number %>
+                        </h1>
+                        <p>
+                            <%= agencyItem.disc %>
+                        </p>
 
                     </div>
+                    <%})%>
+            </div>
+        </article>
+    </section>
+    <section class="section-agency">
+        <article class="agency">
+            <p>SEC.</p>
+            <h1>CAPABILITIES</h1>
+        </article>
+        <article class="categories">
+            <div class="category-text">
+                <p>/B</p>
+                <h3>●</h3>
+
+            </div>
+
+            <div class="agency-forEach">
+                <% capa.forEach(capaItem=> { %>
+                    <div class="capaItem-list">
+                        <h2>
+                            <%= capaItem.head %>
+                        </h2>
+                        <ul>
+                            <li>
+                                <%= capaItem.list1 %>
+                            </li>
+                            <li>
+                                <%= capaItem.list2 %>
+                            </li>
+                            <li>
+                                <%= capaItem.list3 %>
+                            </li>
+                            <li>
+                                <%= capaItem.list4 %>
+                            </li>
+                            <li>
+                                <%= capaItem.list5 %>
+                            </li>
+                            <li>
+                                <%= capaItem.list6 %>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <%})%>
+            </div>
+        </article>
+    </section>
+    <section class="section-awards">
+        <article class="agency">
+            <p>SEC.</p>
+            <h1>AWARDS</h1>
+        </article>
+        <article class="categories">
+            <div class="category-text">
+                <p>/C</p>
+                <h3>●</h3>
+
+            </div>
+
+            <div class="agency-forEach">
+
+                <div>
+                    <h4>While results are what matter most, we believe awards bring value and recognition to
+                        organizations as well as individuals.
+                    </h4>
+                    <a href="#">full awardslist</a>
 
                 </div>
 
-
-            </article>
-        </section>
-        <section class="Gallery-aword">
-            <div>
-                <h1 id="head1">WEEBY AWARDS <span>/40</span></h1>
-                <img src="assets/img/hover-1.jpg" alt="" id="img1">
-            </div>
-            <div>
-                <h1 id="head2">ADWEEK <span>/01</span></h1>
-                <img src="assets/img/hover-2.jpg" alt="" id="img2">
-            </div>
-            <div>
-                <h1 id="head3">AWWWORDS<span>/22</span></h1>
-                <img src="assets/img/hover-3.jpg" alt="" id="img3">
-            </div>
-            <div>
-                <h1 id="head4">D&AD <span>/01</span></h1>
-                <img src="assets/img/hover-4.jpg" alt="" id="img4">
-            </div>
-            <div>
-                <h1 id="head5">ONE SHOW <span>/03</span></h1>
-                <img src="assets/img/hover-5.jpg" alt="" id="img5">
-            </div>
-            <div>
-                <h1 id="head6">THE FWA <span>/07</span></h1>
-                <img src="assets/img/hover-6.jpg" alt="" id="img6">
             </div>
 
-        </section>
+
+        </article>
     </section>
-    <script src="assets/js/main.js"></script>
+    <section class="Gallery-aword">
+        <div>
+            <h1 id="head1">WEEBY AWARDS <span>/40</span></h1>
+            <img src="assets/img/hover-1.jpg" alt="" id="img1">
+        </div>
+        <div>
+            <h1 id="head2">ADWEEK <span>/01</span></h1>
+            <img src="assets/img/hover-2.jpg" alt="" id="img2">
+        </div>
+        <div>
+            <h1 id="head3">AWWWORDS<span>/22</span></h1>
+            <img src="assets/img/hover-3.jpg" alt="" id="img3">
+        </div>
+        <div>
+            <h1 id="head4">D&AD <span>/01</span></h1>
+            <img src="assets/img/hover-4.jpg" alt="" id="img4">
+        </div>
+        <div>
+            <h1 id="head5">ONE SHOW <span>/03</span></h1>
+            <img src="assets/img/hover-5.jpg" alt="" id="img5">
+        </div>
+        <div>
+            <h1 id="head6">THE FWA <span>/07</span></h1>
+            <img src="assets/img/hover-6.jpg" alt="" id="img6">
+        </div>
+
+    </section>
+    </section>
+
 
     <%- include('./partials/footer') %>
