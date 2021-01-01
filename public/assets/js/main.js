@@ -40,7 +40,7 @@ function normalZindex3(team) {
 const burger = document.getElementById("hamburger")
 const closeBurger = document.getElementById("close")
 const hamburger = document.getElementById("overlay")
-console.log(burger);
+
 burger.addEventListener("click", () => {
     hamburger.style.right = "0%"
 })
@@ -61,18 +61,31 @@ let head5 = document.getElementById("head5")
 let img5 = document.getElementById("img5")
 let head6 = document.getElementById("head6")
 let img6 = document.getElementById("img6")
+if (head1){
 head1.addEventListener("mouseover", show1)
 head1.addEventListener("mouseout", hide1)
+}
+if (head2){
 head2.addEventListener("mouseover", show2)
 head2.addEventListener("mouseout", hide2)
-head3.addEventListener("mouseover", show3)
-head3.addEventListener("mouseout", hide3)
-head4.addEventListener("mouseover", show4)
-head4.addEventListener("mouseout", hide4)
-head5.addEventListener("mouseover", show5)
-head5.addEventListener("mouseout", hide5)
-head6.addEventListener("mouseover", show6)
-head6.addEventListener("mouseout", hide6)
+}
+if (head3){
+    head3.addEventListener("mouseover", show3)
+    head3.addEventListener("mouseout", hide3)
+    }
+    if (head4){
+        head4.addEventListener("mouseover", show4)
+        head4.addEventListener("mouseout", hide4)
+        }
+        if (head5){
+            head5.addEventListener("mouseover", show5)
+            head5.addEventListener("mouseout", hide5)
+            }
+            if (head6){
+                head6.addEventListener("mouseover", show6)
+                head6.addEventListener("mouseout", hide6)
+                }
+
 function show1() {
     
     img1.style.display = "block"
